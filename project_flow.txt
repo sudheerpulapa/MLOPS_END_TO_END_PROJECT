@@ -1,0 +1,6 @@
+# 1. init_setup.sh:
+
+- Run this file in Git Bash
+- Command: ./init_setup.sh
+
+
