@@ -6,7 +6,43 @@
 
 - Run this file in Git Bash
 - Command: ./init_setup.sh
+- This made us building environment, activating environment
+- This also makes us install dependencies required for the project via requirements_dev.txt
 
+######## The code in init_setup.sh is:
 
+#!/bin/bash
+
+echo "$(date): START"
+
+echo "$(date): Creating environment with Python 3.8 version"
+
+# Create a virtual environment named 'env' with Python 3.8
+conda create --prefix ./env python=3.8 -y
+
+echo "$(date): Activating the environment"
+
+# Activate the created environment
+source activate ./env
+
+echo "$(date): Installing the development requirements"
+
+# Install the development requirements
+pip install -r requirements_dev.txt
+
+echo "$(date): END"
+
+This makes us automatic 
+
+# 2. experiments.ipynb file:
+
+- Data Extraction
+- Data Ingestion
+- Exploratory Data Analysis (EDA)
+- Model Building (via scikit-learn library)
+- Model Evaluation 
+- Logging 
+
+# 3. 
 
 
