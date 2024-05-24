@@ -1,6 +1,12 @@
+# Important to run in Git Bash:
+- source /c/ProgramData/anaconda3/Scripts/activate
+
+
 # 1. init_setup.sh:
 
 - Run this file in Git Bash
 - Command: ./init_setup.sh
+
+
 
 

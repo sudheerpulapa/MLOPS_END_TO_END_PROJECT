@@ -1,0 +1,91 @@
+##############################
+# Basic Conda Commands       #
+##############################
+
+# Create a new environment
+conda create --name myenv
+
+# Activate an environment
+conda activate myenv
+
+# Install a package in the active environment
+conda install numpy
+
+# List all environments
+conda env list
+
+# List all packages installed in the active environment
+conda list
+
+# Update conda and all packages in the active environment
+conda update --all
+
+##############################
+# Environment Management     #
+##############################
+
+# Create an environment with specific Python version
+conda create --name py3_env python=3.8
+
+# Clone an environment
+conda create --name new_env --clone old_env
+
+# Export environment to a YAML file
+conda env export --name myenv > environment.yml
+
+# Create environment from YAML file
+conda env create --file environment.yml
+
+##############################
+# Package Management         #
+##############################
+
+# Install specific version of a package
+conda install numpy=1.18.1
+
+# Remove a package
+conda remove numpy
+
+# Search for available packages
+conda search scipy
+
+# List all installed packages with their versions
+conda list --explicit
+
+##############################
+# Channels and Configuration #
+##############################
+
+# Add a channel
+conda config --add channels conda-forge
+
+# Remove a channel
+conda config --remove channels conda-forge
+
+# List configured channels
+conda config --show channels
+
+# Update conda configuration
+conda config --set auto_activate_base false
+
+##############################
+# Advanced Operations        #
+##############################
+
+# Remove an environment
+conda env remove --name myenv
+
+# Clean unnecessary packages and cache
+conda clean --all
+
+# Create a virtual environment for a non-Python project
+conda create --name myenv
+
+# Activate a virtual environment
+conda activate myenv
+
+# Deactivate an environment
+conda deactivate
+
+# List all environments including inactive ones
+conda info --envs
